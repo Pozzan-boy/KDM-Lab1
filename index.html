@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab1</title>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="down-arrow"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></div>
+    <div class="table">
+        <div class="table__adjacency">
+            <div class="table__header">adjaceny table</div>
+            <button class="table__adjacency_add">ADD</button>
+            <div class="table__adjacency_table"></div>
+        </div>
+        <div class="btn__wrapper">
+            <button class="button">to incidency</button>
+            <button class="button">to adjacency</button>
+            <div class="switcher">
+                <div class="switcher__item switcher__item_active">Or</div>
+                <div class="switcher__item">Nor</div>
+            </div>
+        </div>
+        <div class="table__incidency">
+            <div class="table__header">incidency table</div>
+        </div>
+    </div>
+
+    <div id="mynetwork" ></div>
+
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
